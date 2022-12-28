@@ -49,10 +49,4 @@ main {
 
 .container .row .col-md form{
     display: flex;
-    float: center;
-}
-
-.container .row .col-md form button{
-    background-color: #0ca789;
-    color: white;
 }
