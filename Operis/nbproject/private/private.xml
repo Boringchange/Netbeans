@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/5IM8/Proyecto/OperisNet/Netbeans/Operis/web/HTML/Ciber_index.html</file>
-            <file>file:/F:/5IM8/Proyecto/OperisNet/Netbeans/Operis/web/HTML/Login_Presupuesto.html</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/bajasUser.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/Login_GestionUsuario.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/ValidarAdmin.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/HTML/Login_GestionUsuario.html</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/CambioUser.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/EditUser.jsp</file>
         </group>
     </open-files>
 </project-private>

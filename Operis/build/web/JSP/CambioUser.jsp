@@ -38,7 +38,7 @@
             }
             else{%>
                             <script> alert ("El usuario no existe.");</script>
-                            <meta http-equiv="Refresh" content="0;url=../HTML/EditUser.html">                            
+                            <meta http-equiv="Refresh" content="0;url=../HTML/EditUser.html">                        
         <%
             }%>
     </body>
