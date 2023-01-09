@@ -36,8 +36,15 @@
         if (tipo.equals("administrador")){%>
             <meta http-equiv="Refresh" content="0;url=../HTML/GestionUsuario.html">
         <%}
+else{
+%>
+<script> alert ("Esta cuenta no tiene permisos de administrador");</script>
+<meta http-equiv="Refresh" content="0;url=../HTML/Operis_direct.html">
+<%
+}
     }
     else{%>
+    <script> alert ("El usuario no existe");</script>
     <meta http-equiv="Refresh" content="0;url=../HTML/Operis_direct.html">     
 <%}
 %>
