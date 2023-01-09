@@ -34,7 +34,11 @@
         tipo = rs.getString("tipo_per");
      
         if (tipo.equals("administrador")){%>
-            <meta http-equiv="Refresh" content="0;url=../HTML/GestionUsuario.html">
+        <form action="GestionUsuario.jsp">
+            <input style="margin-top: 5%" type="number" name="idadmin" value=<%out.println(id);%>>
+            <button type="submit" id="a" >a</button>
+            <script>document.getElementById('a').click();</script>
+        </form>
         <%}
 else{
 %>
