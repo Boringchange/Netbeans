@@ -66,9 +66,9 @@
                             <div style="margin-top: 3%">
                                 <select class="select">
                                     <option value="">(Admin, Empleado de piso, Repartidor)</option>
-                                    <option value="Admin">Admin</option>
-                                    <option value="Empleado de piso">Empleado de piso</option>
-                                    <option value="Repartidor">Repartidor</option>
+                                    <option value="administrador">Admin</option>
+                                    <option value="empleado de piso">Empleado de piso</option>
+                                    <option value="repartidor">Repartidor</option>
                                 </select>
                             </div>
                             <div class="col-md-12" style="margin-top: 3%">
@@ -119,6 +119,7 @@
                             </th>
                             <th style="width: 20%;">
                                 <form action="EditUser.jsp">
+                                    <input  type="text" style="display: none" name="IDMaster" value="<%out.println(ID);%>">
                                     <input  type="text" style="display: none" name="EditarID" value="<%out.println(ShowID);%>">
                                     <button style="border: none"><img width="200px" src="../IMG/ModifyUser.png"></button>
                                 </form>
