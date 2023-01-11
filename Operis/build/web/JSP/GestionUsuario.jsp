@@ -123,7 +123,7 @@
                                     <button style="border: none"><img width="200px" src="../IMG/ModifyUser.png"></button>
                                 </form>
                             </th>
-                            <th style="width: 20%;">
+                            <th style="width: 20%">
                                 <form>
                                     <button style="border: none"><img width="200px" src="../IMG/DeleteUser.png"></button>
                                  </form>
