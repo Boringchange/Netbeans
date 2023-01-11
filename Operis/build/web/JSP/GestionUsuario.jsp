@@ -95,8 +95,8 @@
                     <div class="col-md-1">
                         <p style="font-size: 40px; text-align: center"></p>
                     </div>
-                    <table>
-                        <thead>
+                    <table class="table">
+                        <thead class="table-black">
                             <tr>
                                 <th>ID</th>
                                 <th>NOMBRE</th>
@@ -105,7 +105,7 @@
                                 <th>ELIMINAR</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-secondary">
                                 <%
                             while (rs.next()){%>
                             <tr>

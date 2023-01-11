@@ -52,7 +52,7 @@ table {
     border-collapse: collapse;
 }
 
-thead td th {
+td, th {
     text-align: center;
     width: 30%;
 }
@@ -63,7 +63,7 @@ tr {
     padding: 8px;
     width: 30%;
   }
-
+  
   
 tr:nth-child(even) {
     background-color: #dddddd;
@@ -71,4 +71,9 @@ tr:nth-child(even) {
   
 td .tablebutton {
       width: 20%;
+  }
+  
+  .table-black{
+      background-color: #0CA789;
+      color: white;
   }
