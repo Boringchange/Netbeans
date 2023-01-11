@@ -66,9 +66,9 @@
                             <div style="margin-top: 3%">
                                 <select class="select">
                                     <option value="">(Admin, Empleado de piso, Repartidor)</option>
-                                    <option value="Admin">Admin</option>
-                                    <option value="Empleado de piso">Empleado de piso</option>
-                                    <option value="Repartidor">Repartidor</option>
+                                    <option value="administrador">Admin</option>
+                                    <option value="empleado de piso">Empleado de piso</option>
+                                    <option value="repartidor">Repartidor</option>
                                 </select>
                             </div>
                             <div class="col-md-12" style="margin-top: 3%">
@@ -98,30 +98,30 @@
                     <table>
                         <thead>
                             <tr>
-                                <th class="mx-auto">ID</th>
-                                <th class="mx-auto">NOMBRE</th>
-                                <th class="mx-auto">TIPO</th>
-                                <th class="mx-auto">MODIFICAR</th>
-                                <th class="mx-auto">ELIMINAR</th>
+                                <th>ID</th>
+                                <th>NOMBRE</th>
+                                <th>TIPO</th>
+                                <th>MODIFICAR</th>
+                                <th>ELIMINAR</th>
                             </tr>
                         </thead>
                         <tbody>
                                 <%
                             while (rs.next()){%>
                             <tr>
-                                <td>
+                                <td style="width: 30%;">
                                     <%
                                     ShowID = rs.getInt("idper");
                                     out.println(ShowID);
                                     %>
                                 </td>
-                                <td>
+                                <td style="width: 30%;">
                                     <%
                                     Name = rs.getString("nom_per");
                                     out.println(Name);
                                     %>
                                 </td>
-                                <td>
+                                <td style="width: 30%;">
                                     <%
                                     EmployedType = rs.getString("tipo_per");
                                     out.println(EmployedType);
@@ -129,8 +129,9 @@
                                 </td>
                                 <td class="tablebutton">
                                     <form action="EditUser.jsp">
+                                        <input  type="text" style="display: none" name="IDMaster" value="<%out.println(ID);%>">
                                         <input  type="text" style="display: none" name="EditarID" value="<%out.println(ShowID);%>">
-                                        <button class="btn btn-outline-secondary">Modificar</button>
+                                        <button class="btn btn-outline-secondary">MODIFICAR</button>
                                     </form>
                                 </td>
                                 <td class="tablebutton">

@@ -57,7 +57,7 @@ thead td th {
     width: 30%;
 }
 
-td, th {
+tr {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
