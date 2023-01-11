@@ -96,41 +96,52 @@
                         <p style="font-size: 40px; text-align: center"></p>
                     </div>
                     <table>
-                    <%
-                        while (rs.next()){%>
-                        <tr style="border-top: 2px solid black; border-bottom: 2px solid black;">
-                            <th style="width: 30%;">
+                        <thead>
+                            <tr>
+                                <th class="mx-auto">ID</th>
+                                <th class="mx-auto">NOMBRE</th>
+                                <th class="mx-auto">TIPO</th>
+                                <th class="mx-auto">MODIFICAR</th>
+                                <th class="mx-auto">ELIMINAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                                 <%
-                                ShowID = rs.getInt("idper");
-                                out.println(ShowID);
-                                %>
-                            </th>
-                            <th style="width: 30%;">
-                                <%
-                                Name = rs.getString("nom_per");
-                                out.println(Name);
-                                %>
-                            </th>
-                            <th style="width: 30%;">
-                                <%
-                                EmployedType = rs.getString("tipo_per");
-                                out.println(EmployedType);
-                                %>
-                            </th>
-                            <th style="width: 20%;">
-                                <form action="EditUser.jsp">
-                                    <input  type="text" style="display: none" name="EditarID" value="<%out.println(ShowID);%>">
-                                    <button style="border: none"><img width="200px" src="../IMG/ModifyUser.png"></button>
-                                </form>
-                            </th>
-                            <th style="width: 20%">
-                                <form>
-                                    <button style="border: none"><img width="200px" src="../IMG/DeleteUser.png"></button>
-                                 </form>
-                            </th>
-                        </tr>
-                       <% }
-                    %>
+                            while (rs.next()){%>
+                            <tr>
+                                <td>
+                                    <%
+                                    ShowID = rs.getInt("idper");
+                                    out.println(ShowID);
+                                    %>
+                                </td>
+                                <td>
+                                    <%
+                                    Name = rs.getString("nom_per");
+                                    out.println(Name);
+                                    %>
+                                </td>
+                                <td>
+                                    <%
+                                    EmployedType = rs.getString("tipo_per");
+                                    out.println(EmployedType);
+                                    %>
+                                </td>
+                                <td class="tablebutton">
+                                    <form action="EditUser.jsp">
+                                        <input  type="text" style="display: none" name="EditarID" value="<%out.println(ShowID);%>">
+                                        <button class="btn btn-outline-secondary">Modificar</button>
+                                    </form>
+                                </td>
+                                <td class="tablebutton">
+                                    <form>
+                                        <button class="btn btn-outline-danger">ELIMINAR</button>
+                                     </form>
+                                </td>
+                            </tr>
+                           <% }
+                        %>
+                        </tbody>
                     </table>
                 </div>
             </main>
