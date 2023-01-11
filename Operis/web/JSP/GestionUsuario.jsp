@@ -88,11 +88,8 @@
     <div class="row">
         <div class="col-md-4">
         </div>
-        <div class="col-md-6">
-            <h1 style="margin-left: 11%">_________________________________________</h1>
-            <div>
-                <p style="font-size: 30px; margin-left: 30%">Usuarios actuales</p>
-            </div>
+        <div class="col-md-6" style="border-top: 2px solid black;">
+            <p style="font-size: 30px; margin-left: 35%; margin-top: 2%;">Usuarios actuales</p>
             <main>
                 <div class="row">
                     <div class="col-md-1">
@@ -101,31 +98,32 @@
                     <table>
                     <%
                         while (rs.next()){%>
-                        <tr>
-                            <th>
+                        <tr style="border-top: 2px solid black; border-bottom: 2px solid black;">
+                            <th style="width: 30%;">
                                 <%
                                 ShowID = rs.getInt("idper");
                                 out.println(ShowID);
                                 %>
                             </th>
-                            <th>
+                            <th style="width: 30%;">
                                 <%
                                 Name = rs.getString("nom_per");
                                 out.println(Name);
                                 %>
                             </th>
-                            <th>
+                            <th style="width: 30%;">
                                 <%
                                 EmployedType = rs.getString("tipo_per");
                                 out.println(EmployedType);
                                 %>
                             </th>
-                            <th>
-                               <form action="">
+                            <th style="width: 20%;">
+                                <form action="EditUser.jsp">
+                                    <input  type="text" style="display: none" name="EditarID" value="<%out.println(ShowID);%>">
                                     <button style="border: none"><img width="200px" src="../IMG/ModifyUser.png"></button>
                                 </form>
                             </th>
-                            <th>
+                            <th style="width: 20%;">
                                 <form>
                                     <button style="border: none"><img width="200px" src="../IMG/DeleteUser.png"></button>
                                  </form>
