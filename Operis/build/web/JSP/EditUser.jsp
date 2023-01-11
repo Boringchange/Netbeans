@@ -5,7 +5,7 @@
     ResultSet rs = null;
     Connection con = null;
     
-    int id, sueldo;
+    int id;
     String name,type,num;
 %>
 <!DOCTYPE html>
@@ -54,7 +54,7 @@
         <input placeholder="Numero de telefono" class="ouiduser" disabled>
       </div>
       <div class="col-md-4">
-        <input placeholder="de 6 digitos" type="number" class="iniduser1" name="ID">
+        <input placeholder="<%out.println();%>" type="number" class="iniduser1" name="ID">
         <input type="text" placeholder="Juan" class="iniduser" name="name">
         <div>
           <select class="select" name="type">

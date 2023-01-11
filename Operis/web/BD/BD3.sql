@@ -1,6 +1,6 @@
-Drop database if exists NEGOCIO4;
-create database NEGOCIO4;
-use NEGOCIO4;
+Drop database if exists NEGOCIO3;
+create database NEGOCIO3;
+use NEGOCIO3;
 
 create table Paquete(
 idpaq int primary key not null,
@@ -13,18 +13,19 @@ desc_paq varchar(100)
 );
 
 create table Personal(
-curp_per varchar(20) primary key not null,
+idper int primary key not null auto_increment ,
 nom_per varchar(40),
-tipo_per varchar(15),
+tipo_per varchar(50),
 sueldo_per int,
 tel_per varchar(15)
-);
+)
+auto_increment=100000;
 
 create table Paq_per(
 idpaq int,
-curp_per varchar(20),
+idper int,
 foreign key(idpaq) references Paquete (idpaq) on update cascade on delete cascade,
-foreign key(curp_per) references Personal (curp_per) on update cascade on delete cascade
+foreign key(idper) references Personal (idper) on update cascade on delete cascade
 );
 
 create table Cliente(
@@ -89,31 +90,32 @@ foreign key(idcomp) references Computadora (idcomp) on update cascade on delete 
 
 create table Registrar(
 idregis int primary key not null,
-curp_per varchar(20),
+idper int,
 idpaq int,
-foreign key(curp_per) references Personal (curp_per) on update cascade on delete cascade,
+foreign key(idper) references Personal (idper) on update cascade on delete cascade,
 foreign key(idpaq) references Paquete (idpaq) on update cascade on delete cascade
 );
 
 create table Administrar(
 idadmin int primary key not null,
-curp_per varchar(20),
+idper int,
 idpres int,
-foreign key(curp_per) references Personal (curp_per) on update cascade on delete cascade,
+foreign key(idper) references Personal (idper) on update cascade on delete cascade,
 foreign key(idpres) references Presupuesto (idpres) on update cascade on delete cascade
 );
 
 
 create table Vender(
 idvent int primary key not null,
-curp_per varchar(20),
+idper int,
 idprodu int,
 nopiezas_vent int,
 dia_vent varchar(10),
-foreign key(curp_per) references Personal (curp_per) on update cascade on delete cascade,
+foreign key(idper) references Personal (idper) on update cascade on delete cascade,
 foreign key(idprodu) references Producto (idprodu) on update cascade on delete cascade
 );
 
+insert into Personal values (123456, 'Joshua','administrador',1,'5555555555');
 
 select*from Paquete;
 select*from Personal;
