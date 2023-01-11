@@ -109,19 +109,19 @@
                                 <%
                             while (rs.next()){%>
                             <tr>
-                                <td style="width: 30%;">
+                                <td>
                                     <%
                                     ShowID = rs.getInt("idper");
                                     out.println(ShowID);
                                     %>
                                 </td>
-                                <td style="width: 30%;">
+                                <td>
                                     <%
                                     Name = rs.getString("nom_per");
                                     out.println(Name);
                                     %>
                                 </td>
-                                <td style="width: 30%;">
+                                <td>
                                     <%
                                     EmployedType = rs.getString("tipo_per");
                                     out.println(EmployedType);
