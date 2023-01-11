@@ -19,8 +19,7 @@
         stmt = con.createStatement();
 
         idadmin =Integer.parseInt(request.getParameter("IDMaster"));
-        
-        id = request.
+
         %>
     </head>
     

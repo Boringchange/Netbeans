@@ -78,6 +78,7 @@
                     </div>
                 </main>
                 <div class="col-md-6" style="margin-left: 22%; margin-top: 3%">
+                    <input  type="text" style="display: none" name="IDMaster" value="<%out.println(ID);%>">
                     <button style="border-radius: 15px; font-size: 30px; width: 100%; background-color: #0CA789; color: #ffffff; margin-top: 10px">Confirmar</button>
                 </div>
             </div>
