@@ -37,7 +37,7 @@
 <div class="divTxtBig">
     <h1 class="h1Header">Registrar/Modificar usuario</h1>
 </div>
-<form>
+<form action="AltasAdmin.jsp">
     <main class="fondo">
         <div class="row" style="margin-top: 3%">
             <div class="col-md-4">
@@ -59,12 +59,12 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <input placeholder="de 6 digitos" type="number" class="iniduser">
+                            <input placeholder="de 6 digitos" type="number" class="iniduser" name="NewID">
                             <div class="col-md-12" style="margin-top: 3%">
-                                <input type="text" placeholder="Juan" class="iniduser">
+                                <input type="text" placeholder="Juan" class="iniduser" name="NewName">
                             </div>
                             <div style="margin-top: 3%">
-                                <select class="select">
+                                <select class="select" name="NewType">
                                     <option value="">(Admin, Empleado de piso, Repartidor)</option>
                                     <option value="administrador">Admin</option>
                                     <option value="empleado de piso">Empleado de piso</option>
@@ -72,7 +72,7 @@
                                 </select>
                             </div>
                             <div class="col-md-12" style="margin-top: 3%">
-                                <input type="text" placeholder="0147471741" class="iniduser">
+                                <input type="text" placeholder="0147471741" class="iniduser" name="NewNum">
                             </div>
                         </div>
                     </div>
