@@ -15,16 +15,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <%
-    Class.forName("com.mysql.jdbc.Driver").newInstance();
-    
-    con = DriverManager.getConnection("jdbc:mysql://localhost/NEGOCIO3?user=root&password=n0m3l0");
-    
-    stmt = con.createStatement();
-    
-    id =Integer.parseInt(request.getParameter("idadmin"));
-    
-    rs = stmt.executeQuery("SELECT * FROM personal where idper ="+     id    +"");
-    %>
+        Class.forName("com.mysql.jdbc.Driver").newInstance();
+
+        con = DriverManager.getConnection("jdbc:mysql://localhost/NEGOCIO3?user=root&password=n0m3l0");
+
+        stmt = con.createStatement();
+
+        id =Integer.parseInt(request.getParameter("idadmin"));
+       
+        rs = stmt.executeQuery("SELECT * FROM personal where idper ="+     id    +"");
+        %>
     </head>
     <body>
         <%
