@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .divTxtBig{
     margin-left: 10%;
 }
@@ -44,6 +46,29 @@
     border-left-color: 5px;
     border-bottom-color: 5px;
 }
-.bt_table{
-    border-radius: 18px;
+
+table {
+    font-family: 'Poppins', sans-serif;
+    border-collapse: collapse;
 }
+
+thead td th {
+    text-align: center;
+    width: 30%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 30%;
+  }
+
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+td .tablebutton {
+      width: 20%;
+  }
