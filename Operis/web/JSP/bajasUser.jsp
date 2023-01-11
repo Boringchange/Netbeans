@@ -2,12 +2,10 @@
 
 <%!
     Statement stmt = null;
-    ResultSet rs = null;
     Connection con = null;
     
     int id, sueldo=1;
     String name,type,num;
-    String query = "SELECT * FROM Personal";
 %>
 
 <!DOCTYPE html>

@@ -1,5 +1,16 @@
+<%@ page import="java.sql.*" %>
+
 <%!
-    int ID;
+    Statement stmt = null;
+    ResultSet rs = null;
+    Connection con = null;
+    
+    int ID, ShowID;
+    String Name;
+    String EmployedType;
+    
+    
+    String query = "SELECT * FROM Personal";
 %>
 
 <!DOCTYPE html>
@@ -14,6 +25,14 @@
 <body>
     <%
         ID = Integer.parseInt(request.getParameter("idadmin"));
+        
+        Class.forName("com.mysql.jdbc.Driver").newInstance();
+    
+        con = DriverManager.getConnection("jdbc:mysql://localhost/NEGOCIO3?user=root&password=n0m3l0");
+    
+        stmt = con.createStatement();
+        
+        rs = stmt.executeQuery("SELECT * FROM personal");
     %>
 <div class="divTxtBig">
     <h1 class="h1Header">Registrar/Modificar usuario</h1>
@@ -72,27 +91,51 @@
         <div class="col-md-6">
             <h1 style="margin-left: 11%">_________________________________________</h1>
             <div>
-                <p style="font-size: 30px; margin-left: 30%">Computadoras actuales</p>
+                <p style="font-size: 30px; margin-left: 30%">Usuarios actuales</p>
             </div>
-            <div style="overflow: scroll">
-                <main>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p style="font-size: 40px; text-align: center">Hola q hace</p>
-                        </div>
-                        <div class="col-md-3">
-                            <form action="">
-                                <button style="border: none"><img width="200px" src="../IMG/ModifyUser.png"></button>
-                            </form>
-                        </div>
-                        <div class="col-md-3">
-                            <form>
-                                <button style="border: none"><img width="200px" src="../IMG/DeleteUser.png"></button>
-                            </form>
-                        </div>
+            <main>
+                <div class="row">
+                    <div class="col-md-1">
+                        <p style="font-size: 40px; text-align: center"></p>
                     </div>
-                </main>
-            </div>
+                    <table>
+                    <%
+                        while (rs.next()){%>
+                        <tr>
+                            <th>
+                                <%
+                                ShowID = rs.getInt("idper");
+                                out.println(ShowID);
+                                %>
+                            </th>
+                            <th>
+                                <%
+                                Name = rs.getString("nom_per");
+                                out.println(Name);
+                                %>
+                            </th>
+                            <th>
+                                <%
+                                EmployedType = rs.getString("tipo_per");
+                                out.println(EmployedType);
+                                %>
+                            </th>
+                            <th>
+                               <form action="">
+                                    <button style="border: none"><img width="200px" src="../IMG/ModifyUser.png"></button>
+                                </form>
+                            </th>
+                            <th>
+                                <form>
+                                    <button style="border: none"><img width="200px" src="../IMG/DeleteUser.png"></button>
+                                 </form>
+                            </th>
+                        </tr>
+                       <% }
+                    %>
+                    </table>
+                </div>
+            </main>
         </div>
     </div>
 </main>

@@ -35,7 +35,7 @@
      
         if (tipo.equals("administrador")){%>
         <form action="GestionUsuario.jsp">
-            <input style="margin-top: 5%" type="number" name="idadmin" value=<%out.println(id);%>>
+            <input style="margin-top: 5%" type="hidden" name="idadmin" value=<%out.println(id);%> >
             <button type="submit" id="a" >a</button>
             <script>document.getElementById('a').click();</script>
         </form>
