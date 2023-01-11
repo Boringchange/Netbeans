@@ -5,7 +5,7 @@
     ResultSet rs = null;
     Connection con = null;
     
-    int id;
+    int id, idadmin;
     String name,type,num;
 %>
 <!DOCTYPE html>
@@ -19,17 +19,27 @@
     <%
         id = Integer.parseInt(request.getParameter("EditarID"));
         
-
+        idadmin = Integer.parseInt(request.getParameter("IDMaster"));
+        
         Class.forName("com.mysql.jdbc.Driver").newInstance();
 
         con = DriverManager.getConnection("jdbc:mysql://localhost/NEGOCIO3?user=root&password=n0m3l0");
 
         stmt = con.createStatement();
                 
-        rs = stmt.executeQuery("SELECT * FROM personal where idper ="+     id    +"");     
+        rs = stmt.executeQuery("SELECT * FROM personal where idper ="+     id    +"");
     %>
 </head>
 <body>
+    <%
+        if(rs.next()){
+            name = rs.getString("nom_per");
+
+            type = rs.getString("tipo_per");
+
+            num = rs.getString("tel_per");
+        }
+    %>
   <main class="Top">
     <div class="row">
       <div class="col-md-6">
@@ -54,17 +64,38 @@
         <input placeholder="Numero de telefono" class="ouiduser" disabled>
       </div>
       <div class="col-md-4">
-        <input placeholder="<%out.println();%>" type="number" class="iniduser1" name="ID">
-        <input type="text" placeholder="Juan" class="iniduser" name="name">
+        <input placeholder="<%out.println(id);%>" type="number" class="iniduser1" name="ID">
+        <input type="text" placeholder="<%out.println(name);%>" class="iniduser" name="name">
         <div>
-          <select class="select" name="type">
-            <option value="">(Admin, Empleado de piso, Repartidor)</option>
-            <option value="Admin">Admin</option>
-            <option value="Empleado de piso">Empleado de piso</option>
-            <option value="Repartidor">Repartidor</option>
+            <select class="select" name="type">
+            <%
+            if(type.equals("administrador")){
+                    %>
+                    <option value="Admin" selected>Admin</option>
+                    <option value="Empleado de piso">Empleado de piso</option>
+                    <option value="Repartidor">Repartidor</option>
+            <%
+                }
+                else{
+                    if(type.equals("repartidor")){
+                            %>
+                            <option value="Admin" >Admin</option>
+                            <option value="Empleado de piso">Empleado de piso</option>
+                            <option value="Repartidor" selected>Repartidor</option>
+                         <%
+                        }
+                        else{
+                            %>
+                                <option value="Admin" >Admin</option>
+                                <option value="Empleado de piso" selected>Empleado de piso</option>
+                                <option value="Repartidor">Repartidor</option>
+                             <%
+                        }
+                }
+            %>
           </select>
         </div>
-        <input type="text" placeholder="0147471741" class="iniduser" name="num">
+        <input type="text" placeholder="<%out.println(num);%>" class="iniduser" name="num">
       </div>
     </div>
   </main>
@@ -74,6 +105,7 @@
   </form>
     <form action="../JSP/GestionUsuario.jsp">
                     <div class="div_buttonback">
+                        <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
                         <button class="bt_back"><img width="200px" src="../IMG/bt_back.png"></button>
                     </div>
                 </form>
