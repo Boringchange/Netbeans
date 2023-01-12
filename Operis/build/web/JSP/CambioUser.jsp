@@ -5,7 +5,7 @@
     ResultSet rs = null;
     Connection con = null;
     
-    int id, sueldo=1;
+    int id, sueldo=1, idadmin;
     String name,type,num;
     String query = "SELECT * FROM Personal";
 %>
@@ -15,6 +15,7 @@
         <title>Cambios</title>
         <%
         id = Integer.parseInt(request.getParameter("ID"));
+        idadmin = Integer.parseInt(request.getParameter("idadmin"));
         name = request.getParameter("name");
         type = request.getParameter("type");
         num = request.getParameter("num");
@@ -33,12 +34,21 @@
         if (rs.next()){
                 stmt.executeUpdate("update personal SET nom_per='" + name +"', tipo_per ='"+ type +"', sueldo_per = "+ sueldo +", tel_per='"+ num +"' where idper ="+ id +" ; ");
                 %>
-                <meta http-equiv="Refresh" content="0;url=../HTML/EditUser.html">
+                <form action="GestionUsuario.jsp">
+                    <script> alert ("Usuario modificado exitosamente.");</script>
+                   <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
+                    <button type="submit" id="a" style="display: none" >a</button>
+                    <script>document.getElementById('a').click();</script>
+                </form>
         <%
             }
             else{%>
-                            <script> alert ("El usuario no existe.");</script>
-                            <meta http-equiv="Refresh" content="0;url=../HTML/EditUser.html">                        
+                            <form action="GestionUsuario.jsp">
+                                <script> alert ("El usuario no existe.");</script>
+                                <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
+                                <button type="submit" id="a" style="display: none" >a</button>
+                                <script>document.getElementById('a').click();</script>
+                            </form>                      
         <%
             }%>
     </body>

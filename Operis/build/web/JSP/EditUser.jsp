@@ -63,6 +63,7 @@
         <input placeholder="Tipo" class="ouiduser" disabled>
         <input placeholder="Numero de telefono" class="ouiduser" disabled>
       </div>
+      <form>
       <div class="col-md-4">
         <input placeholder="<%out.println(id);%>" type="number" class="iniduser1" name="ID">
         <input type="text" placeholder="<%out.println(name);%>" class="iniduser" name="name">
@@ -71,24 +72,24 @@
             <%
             if(type.equals("administrador")){
                     %>
-                    <option value="Admin" selected>Admin</option>
-                    <option value="Empleado de piso">Empleado de piso</option>
-                    <option value="Repartidor">Repartidor</option>
+                    <option value="administrador" selected>Admin</option>
+                    <option value="empleado de piso">Empleado de piso</option>
+                    <option value="repartidor">Repartidor</option>
             <%
                 }
                 else{
                     if(type.equals("repartidor")){
                             %>
-                            <option value="Admin" >Admin</option>
-                            <option value="Empleado de piso">Empleado de piso</option>
-                            <option value="Repartidor" selected>Repartidor</option>
+                            <option value="administrador" >Admin</option>
+                            <option value="empleado de piso">Empleado de piso</option>
+                            <option value="repartidor" selected>Repartidor</option>
                          <%
                         }
                         else{
                             %>
-                                <option value="Admin" >Admin</option>
-                                <option value="Empleado de piso" selected>Empleado de piso</option>
-                                <option value="Repartidor">Repartidor</option>
+                                <option value="administrador" >Admin</option>
+                                <option value="empleado de piso" selected>Empleado de piso</option>
+                                <option value="repartidor">Repartidor</option>
                              <%
                         }
                 }
@@ -100,6 +101,7 @@
     </div>
   </main>
     <div class="divbt">
+        <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
         <button class="bt_change" type="submit">Confirmar cambios</button>
     </div>
   </form>
