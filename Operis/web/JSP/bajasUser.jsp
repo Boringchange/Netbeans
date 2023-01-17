@@ -4,15 +4,16 @@
     Statement stmt = null;
     Connection con = null;
     
-    int id, sueldo=1;
-    String name,type,num;
+    int id, idadmin;
 %>
 
 <!DOCTYPE html>
 <html>
     <head>
         <%
-        id = Integer.parseInt(request.getParameter("id"));
+        id = Integer.parseInt(request.getParameter("EditarID"));
+        
+        idadmin = Integer.parseInt(request.getParameter("IDMaster"));
 
         Class.forName("com.mysql.jdbc.Driver").newInstance();
 
@@ -23,9 +24,14 @@
         stmt.executeUpdate("DELETE FROM Personal where idper ="+ id +"");
     %>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Eliminar User</title>
+        <title></title>
     </head>
     <body>
-        <meta http-equiv="Refresh" content="0;url=GestionUsuario.jsp">
+        <form action="GestionUsuario.jsp">
+            <script> alert ("Usuario elimando exitosamente.");</script>
+            <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
+            <button type="submit" id="a" style="display: none">a</button>
+            <script>document.getElementById('a').click();</script>
+        </form>
     </body>
 </html>

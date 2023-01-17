@@ -136,7 +136,9 @@
                                     </form>
                                 </td>
                                 <td class="tablebutton">
-                                    <form>
+                                    <form action="bajasUser.jsp">
+                                        <input  type="text" style="display: none" name="IDMaster" value="<%out.println(ID);%>">
+                                        <input  type="text" style="display: none" name="EditarID" value="<%out.println(ShowID);%>">
                                         <button class="btn btn-outline-danger">ELIMINAR</button>
                                      </form>
                                 </td>
