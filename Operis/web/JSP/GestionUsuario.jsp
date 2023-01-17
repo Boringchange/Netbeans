@@ -151,6 +151,11 @@
             </main>
         </div>
     </div>
+                        <form action="../HTML/Login_GestionUsuario.html">
+          <div class="div_buttonback">
+            <button class="bt_back"><img width="200px" src="../IMG/bt_back.png"></button>
+          </div>
+        </form>
 </main>
 </body>
 </html>
