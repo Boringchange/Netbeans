@@ -102,13 +102,13 @@
   </main>
     <div class="divbt">
         <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
-        <button class="bt_change" type="submit">Confirmar cambios</button>
+        <button class="bt_change" type="submit" style="border: 0px;">Confirmar cambios</button>
     </div>
   </form>
     <form action="../JSP/GestionUsuario.jsp">
                     <div class="div_buttonback">
-                        <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
-                        <button class="bt_back"><img width="200px" src="../IMG/bt_back.png"></button>
+                        <input  type="text" style="display: none; " name="idadmin" value="<%out.println(idadmin);%>">
+                        <button class="bt_back" style="border: 0px;"><img width="200px" src="../IMG/bt_back.png"></button>
                     </div>
                 </form>
 </body>
