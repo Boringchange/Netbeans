@@ -33,7 +33,7 @@ main {
 }
 
 
-.container .row .col-md img{
+.container .row .col-md .col-lg img{
     width: 200px;
     background-color: #0ca789;
 }
@@ -49,4 +49,8 @@ main {
 
 .container .row .col-md form{
     display: flex;
+}
+
+.container .row-lg {
+ height: 100px;
 }
