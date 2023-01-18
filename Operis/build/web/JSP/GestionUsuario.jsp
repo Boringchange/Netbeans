@@ -79,7 +79,7 @@
                 </main>
                 <div class="col-md-6" style="margin-left: 22%; margin-top: 3%">
                     <input  type="text" style="display: none" name="IDMaster" value="<%out.println(ID);%>">
-                    <button style="border-radius: 15px; font-size: 30px; width: 100%; background-color: #0CA789; color: #ffffff; margin-top: 10px">Confirmar</button>
+                    <button style="border-radius: 15px; font-size: 30px; width: 100%; background-color: #0CA789; color: #ffffff; margin-top: 10px;border: 0px;">Confirmar</button>
                 </div>
             </div>
         </div>
@@ -153,7 +153,7 @@
     </div>
                         <form action="../HTML/Login_GestionUsuario.html">
           <div class="div_buttonback">
-            <button class="bt_back"><img width="200px" src="../IMG/bt_back.png"></button>
+              <button class="bt_back" style="border: 0px"><img width="200px" src="../IMG/bt_back.png"></button>
           </div>
         </form>
 </main>
