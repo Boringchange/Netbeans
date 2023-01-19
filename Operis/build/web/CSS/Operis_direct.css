@@ -33,13 +33,13 @@ main {
 }
 
 
-.container .row .col-md .col-lg img{
+.container .row .col-md img {
     width: 200px;
     background-color: #0ca789;
 }
 
-#emp{
-    height: 185px;
+.col-md-2 {
+    background-color: #0ca789;
 }
 
 .container .row .col-md a{
@@ -51,6 +51,6 @@ main {
     display: flex;
 }
 
-.container .row-lg {
- height: 100px;
+.container {
+ height: 200px;
 }
