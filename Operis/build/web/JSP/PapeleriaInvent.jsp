@@ -63,7 +63,7 @@ String namepro;
         <span class="tooltip">Reabastecimiento</span>
       </li>
       <li>
-        <a href="Operis_direct.html">
+        <a href="../HTML/Operis_direct.html">
           <i class='bx bxs-log-out' id="log-out"></i>
           <span class="links-name">Salir</span>
         </a>
