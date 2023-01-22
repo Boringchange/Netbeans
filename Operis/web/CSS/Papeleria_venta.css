@@ -213,8 +213,6 @@ body{
     display: flex;
 }
 
-
-
 .sidebar.active ~ .container{
     width: calc(100% - 260px);
     left: 260px;
