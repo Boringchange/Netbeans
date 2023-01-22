@@ -11,56 +11,57 @@
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-  <div class="sidebar">
-    <div class="logo_content">
-      <div class="logo">
-        <i class='bx bx-store'></i>
-        <div class="logo_name">Papeleria</div>
+      <div class="sidebar">
+        <div class="logo_content">
+          <div class="logo">
+            <i class='bx bx-store'></i>
+            <div class="logo_name">Papeleria</div>
+          </div>
+          <i class='bx bx-menu-alt-left' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+          <li>
+            <a href="Papeleria_venta.html">
+              <i class='bx bx-store-alt' ></i>
+              <span class="links-name">Venta</span>
+            </a>
+            <span class="tooltip">Venta</span>
+          </li>
+          <li>
+            <a href="">
+              <i class='bx bx-clipboard' ></i>
+              <span class="links-name">Inventario</span>
+            </a>
+            <span class="tooltip">Inventario</span>
+          </li>
+          <li>
+            <a href="Papeleria_Reabast.html">
+              <i class='bx bxs-component' ></i>
+              <span class="links-name">Reabastecimiento</span>
+            </a>
+            <span class="tooltip">Reabastecimiento</span>
+          </li>
+          <li>
+            <a href="Operis_direct.html">
+              <i class='bx bxs-log-out' id="log-out"></i>
+              <span class="links-name">Salir</span>
+            </a>
+            <span class="tooltip">Salir</span>
+          </li>
+        </ul>
+        <div class="current_date">
+          <div class="date">
+            <script>
+              date = new Date();
+              year = date.getFullYear();
+              month = date.getMonth() + 1;
+              day = date.getDay();
+              document.getElementById("current_date").innerHTML = "Fecha: " + day + "/" + month + "/" + year;
+            </script>
+          </div>
+        </div>
       </div>
-      <i class='bx bx-menu-alt-left' id="btn"></i>
-    </div>
-    <ul class="nav_list">
-      <li>
-        <a href="Papeleria_venta.html">
-          <i class='bx bx-store-alt' ></i>
-          <span class="links-name">Venta</span>
-        </a>
-        <span class="tooltip">Venta</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-clipboard' ></i>
-          <span class="links-name">Inventario</span>
-        </a>
-        <span class="tooltip">Inventario</span>
-      </li>
-      <li>
-        <a href="Papeleria_Reabast.html">
-          <i class='bx bxs-component' ></i>
-          <span class="links-name">Reabastecimiento</span>
-        </a>
-        <span class="tooltip">Reabastecimiento</span>
-      </li>
-      <li>
-        <a href="Operis_direct.html">
-          <i class='bx bxs-log-out' id="log-out"></i>
-          <span class="links-name">Salir</span>
-        </a>
-        <span class="tooltip">Salir</span>
-      </li>
-    </ul>
-    <div class="current_date">
-      <div class="date">
-        <script>
-          date = new Date();
-          year = date.getFullYear();
-          month = date.getMonth() + 1;
-          day = date.getDay();
-          document.getElementById("current_date").innerHTML = "Fecha: " + day + "/" + month + "/" + year;
-        </script>
-      </div>
-    </div>
-  </div>
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////-->
   <div class="container">
           <div class="row">
               <div class="col-md-6">

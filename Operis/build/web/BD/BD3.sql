@@ -57,6 +57,7 @@ tel_abast varchar(15)
 create table Producto(
 idprodu int primary key not null,
 nom_produ varchar(15),
+unidades_disp int,
 padq_produ int,
 pvent_produ int
 );
