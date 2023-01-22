@@ -153,7 +153,7 @@ String namepro;
           <div class="row">
               <div class="col-sm"></div>
               <div class="col-sm">
-                  <form action="Papeleria_Add.html">
+                  <form action="../HTML/Papeleria_Add.html">
                       <button class="btn btn-primary btn-lg mx-auto">Agregar</button>
                   </form>
               </div>
