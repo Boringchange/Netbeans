@@ -237,8 +237,9 @@ tr:nth-child(even) {
     width: 20%;
 }
 
-.table-black {
+.table-bluess{
     background-color: #0ca789;
+    border-color: #0ca789;
     color: white;
 }
 

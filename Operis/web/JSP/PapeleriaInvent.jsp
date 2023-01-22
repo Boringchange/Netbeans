@@ -49,7 +49,7 @@ String namepro;
         <span class="tooltip">Venta</span>
       </li>
       <li>
-        <a href="#">
+        <a href="">
           <i class='bx bx-clipboard' ></i>
           <span class="links-name">Inventario</span>
         </a>
@@ -98,7 +98,7 @@ String namepro;
           <br>
           <div class="row">
               <table class="table mx-auto">
-                  <thead class="table-dark">
+                  <thead class="table-bluess">
                     <tr>
                         <th>Id</th>
                         <th>Nombre del producto</th>
