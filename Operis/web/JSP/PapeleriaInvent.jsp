@@ -17,7 +17,7 @@ String namepro;
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Inventario papeleria</title>
-      <link href="../CSS/Papeleria.css" rel="stylesheet" type="text/css">
+      <link href="../CSS/Papeleria_invent.css" rel="stylesheet" type="text/css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -85,7 +85,7 @@ String namepro;
   <div class="container">
           <div class="row">
               <div class="col-md-6">
-                  <h1><b>Papelería Inventario</b></h1>
+                  <h1><b>Papeleria Inventario</b></h1>
               </div>
               <div class="col-md-6">
                   <img id="login" src="../IMG/login.png" alt="Imagen de login">
@@ -107,7 +107,7 @@ String namepro;
                         <th>Precio venta</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="table-secondary">
                     <%
                     while(rs.next()){
                         %>
@@ -154,12 +154,12 @@ String namepro;
               <div class="col-sm"></div>
               <div class="col-sm">
                   <form action="Papeleria_Add.html">
-                      <button class="btn btn-primary btn-lg mx-auto">Agregar</button>
+                      <button class="btn btn-outline-success mx-auto">Agregar</button>
                   </form>
               </div>
               <div class="col-sm">
                   <form action="Papeleria_Mod.html">
-                      <button class="btn btn-primary btn-lg mx-auto">Modificar</button>
+                      <button class="btn btn-outline-secondary mx-auto">Modificar</button>
                   </form>
               </div>
               <div class="col-sm"></div>
