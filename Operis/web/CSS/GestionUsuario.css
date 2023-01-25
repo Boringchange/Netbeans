@@ -1,9 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 header {
-    margin-left: 10%;
-    font-size: 80px;
+    margin-bottom: 25px;
 }
+
+header .row h1{
+    margin-left: 0%;
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+main{
+    margin-top: 25px;
+}
+
+#btn_conf {
+    border-radius: 15px;
+    font-size: 30px;
+    width: 100%;
+    background-color: #0CA789;
+    color: #ffffff;
+    margin-top: 10px;
+    border: 0px;
+}
+
+#space_1 {
+    padding-top: 20px;
+}
+
+#space_2 {
+    padding-top: 20px;
+}
+
+hr {
+    height: 5px;
+    color: black;
+    background-color: black;
+}
+
+#urs {
+    font-size: 30px;
+    text-align: center;
+}
+
 .ouiduser{
     border-radius: 10px;
     text-align: center;
@@ -27,9 +66,7 @@ header {
     border-left-color: 5px;
     border-bottom-color: 5px;
 }
-.img{
-    margin-left: 20%;
-}
+
 .select{
     width: 90%;
     border-radius: 10px;
@@ -74,3 +111,9 @@ td .tablebutton {
       background-color: #0CA789;
       color: white;
   }
+
+#return {
+  border-radius: 20px;
+    margin-top: 7%;
+
+}
