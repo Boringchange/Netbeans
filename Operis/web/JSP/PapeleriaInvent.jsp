@@ -17,7 +17,7 @@ String namepro;
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Inventario papeleria</title>
-      <link href="../CSS/Papeleria.css" rel="stylesheet" type="text/css">
+      <link href="../CSS/Papeleria_venta.css" rel="stylesheet" type="text/css">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -153,7 +153,8 @@ String namepro;
           <div class="row">
               <div class="col-sm"></div>
               <div class="col-sm">
-                  <form action="../HTML/Papeleria_Add.html">
+                  <form action="../JSP/PapeleriaAdd.jsp">
+                      <input value="<%out.println(id);%>" name="idadmin" style="display: none;">
                       <button class="btn btn-primary btn-lg mx-auto">Agregar</button>
                   </form>
               </div>
