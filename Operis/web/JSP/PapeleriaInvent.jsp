@@ -98,7 +98,7 @@ String namepro;
           <br>
           <div class="row">
               <table class="table mx-auto">
-                  <thead class="table-bluess">
+                  <thead id="table-bluess">
                     <tr>
                         <th>Id</th>
                         <th>Nombre del producto</th>
