@@ -49,7 +49,12 @@
                             <button class="Botones" disabled>Precio base</button>
                         </div>
                         <div class="col-md-8">
-                            <input class="input" name="BasePrice">
+                            <select name="Producto">
+                                <%
+                                while (rs.next){
+                                    }
+                                %>
+                            </select>
                         </div>
                     </div>
                     <div class="row" style="margin-top: 4%">

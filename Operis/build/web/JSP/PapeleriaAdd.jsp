@@ -76,7 +76,10 @@
                         </div>
                     </form>
                     <div class="col-md-3">
-                        <button class="btn btn-outline-danger" style="border-radius: 20px;"><i class='bx bx-trash' ></i>Limpiar</button>
+                        <form action="PapeleriaAdd.jsp">
+                            <input  type="text" style="display: none" name="idadmin" value="<%out.println(idadmin);%>">
+                            <button class="btn btn-outline-danger" style="border-radius: 20px;"><i class='bx bx-trash' ></i>Limpiar</button>
+                        </form>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 4%">
