@@ -9,6 +9,7 @@
         ResultSet rs = null;
         
         int idadmin;
+        String name;
         %>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,8 +52,11 @@
                         <div class="col-md-8">
                             <select name="Producto">
                                 <%
-                                while (rs.next){
-                                    
+                                while(rs.next()){
+                                    name = rs.getString("nom_produ");
+                                    %>
+                                    <option value="<%out.println(name);%>"><%out.println(name);%></option>
+                                    <%
                                     }
                                 %>
                             </select>
