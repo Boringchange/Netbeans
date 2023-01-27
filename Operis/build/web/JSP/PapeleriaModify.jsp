@@ -52,6 +52,7 @@
                             <select name="Producto">
                                 <%
                                 while (rs.next){
+                                    
                                     }
                                 %>
                             </select>
