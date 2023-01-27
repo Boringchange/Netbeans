@@ -35,43 +35,46 @@
         <br>
         <main>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4" style="height: 100px">
-                        <button class="Botones" disabled>Nombre del producto</button>
+                <form action="AltasProducto.jsp">
+                    <div class="row">
+                        <div class="col-md-4" style="height: 100px">
+                            <button class="Botones" disabled>Nombre del producto</button>
+                        </div>
+                        <div class="col-md-8">
+                            <input class="input" name="Name">
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <input class="input">
+                    <div class="row" style="margin-top: 4%">
+                        <div class="col-md-4" style="height: 100px">
+                            <button class="Botones" disabled>Precio base</button>
+                        </div>
+                        <div class="col-md-8">
+                            <input class="input" name="BasePrice">
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="margin-top: 4%">
-                    <div class="col-md-4" style="height: 100px">
-                        <button class="Botones" disabled>Precio base</button>
+                    <div class="row" style="margin-top: 4%">
+                        <div class="col-md-4" style="height: 100px">
+                            <button class="Botones" disabled>Precio de venta</button>
+                        </div>
+                        <div class="col-md-8">
+                            <input class="input" name="SalePrice">
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <input class="input">
+                    <div class="row" style="margin-top: 4%">
+                        <div class="col-md-4" style="height: 100px">
+                            <button class="Botones" disabled>No. de piezas</button>
+                        </div>
+                        <div class="col-md-2">
+                            <input class="input" name="Number">
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="margin-top: 4%">
-                    <div class="col-md-4" style="height: 100px">
-                        <button class="Botones" disabled>Precio de venta</button>
-                    </div>
-                    <div class="col-md-8">
-                        <input class="input">
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 4%">
-                    <div class="col-md-4" style="height: 100px">
-                        <button class="Botones" disabled>No. de piezas</button>
-                    </div>
-                    <div class="col-md-2">
-                        <input class="input">
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 4%">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-3">
-                        <button class="btn btn-outline-primary" style="border-radius: 20px;"><i class='bx bx-plus-circle'></i> Agregar</button>
-                    </div>
+                    <div class="row" style="margin-top: 4%">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-3">
+                            <input value="<%out.println(idadmin);%>" name="id" style="display: none;">
+                            <button class="btn btn-outline-primary" style="border-radius: 20px;"><i class='bx bx-plus-circle'></i> Agregar</button>
+                        </div>
+                    </form>
                     <div class="col-md-3">
                         <button class="btn btn-outline-danger" style="border-radius: 20px;"><i class='bx bx-trash' ></i>Limpiar</button>
                     </div>
