@@ -3,13 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/HTML/Operis_direct.html</file>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/CSS/Papeleria_invent.css</file>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/HTML/Papeleria_invent.html</file>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/HTML/Papeleria_venta.html</file>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/JSP/PapeleriaInvent.jsp</file>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/CSS/Operis_direct.css</file>
-            <file>file:/C:/Users/diver05/Documents/Tareas-quinto%20semestre%20C9/SWA/third%20partial/keberos/Netbeans/Operis/web/HTML/GestionUsuario.html</file>
+
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/PapeleriaInvent.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/ValidarAdmin.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/AltasAdmin.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/AltasProducto.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/PapeleriaAdd.jsp</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/HTML/Login_Papeleria.html</file>
+            <file>file:/F:/5IM8/Proyecto/OperisNet/Github/Netbeans/Operis/web/JSP/EditUser.jsp</file>
+
         </group>
     </open-files>
 </project-private>
