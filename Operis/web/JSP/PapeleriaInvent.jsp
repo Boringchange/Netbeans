@@ -155,7 +155,7 @@ String namepro;
               <div class="col-sm">
                   <form action="../JSP/PapeleriaAdd.jsp">
                       <input value="<%out.println(id);%>" name="idadmin" style="display: none;">
-                      <button class="btn btn-primary btn-lg mx-auto">Agregar</button>
+                      <button class="btn btn-outline-success mx-auto">Agregar</button>
                   </form>
               </div>
               <div class="col-sm">
